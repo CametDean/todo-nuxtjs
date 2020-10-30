@@ -28,3 +28,18 @@ export default {
     }
 }
 </script>
+
+<style>
+    h1{
+        font-size: 30px;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    input{
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+    }
+</style>

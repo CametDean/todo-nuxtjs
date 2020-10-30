@@ -15,3 +15,11 @@ export default {
     components: { TodoItem }
 }
 </script>
+
+<style>
+    ul{
+        margin: 0;
+        margin-top: 1rem;
+        padding: 0;
+    }
+</style>

@@ -26,3 +26,21 @@ export default {
     },
 }
 </script>
+
+<style>
+    li{
+        list-style: none;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    input{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+</style>
