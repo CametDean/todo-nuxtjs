@@ -14,15 +14,9 @@ export default {
     components: { TodoList },
     data() {
         return {
-            list: [
-                {id: 1, text: "croquettes"},
-                {id: 2, text: "pain"},
-                {id: 3, text: "raisin"},
-                {id: 4, text: "fraises"},
-                {id: 5, text: "framboises"},
-            ],
+            list: [],
             newTodoItem: '',
-            nextTodoId: 6,
+            nextTodoId: 1,
         }
     },
     methods: {

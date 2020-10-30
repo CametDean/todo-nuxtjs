@@ -1,7 +1,7 @@
 <template>
     <div>
         <ul>
-            <TodoItem :items="items" />
+            <TodoItem v-for="singleItem in items" :key="singleItem.id" :text="singleItem.text"/>
         </ul>
     </div>
 </template>
