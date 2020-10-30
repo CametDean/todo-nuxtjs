@@ -1,8 +1,7 @@
 <template>
     <div>
         <h1>Notre super todolist</h1>
-        <input type="text" v-model="newTodoItem">
-        <button v-on:click="addNewItem">Add</button>
+        <input type="text" v-model="newTodoItem" v-on:keyup.enter="addNewItem">
         <TodoList :items="list"/>
     </div>
 </template>
