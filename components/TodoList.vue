@@ -1,7 +1,7 @@
 <template>
     <div>
         <ul>
-            <TodoItem v-for="singleItem in items" :key="singleItem.id" :text="singleItem.text"/>
+            <TodoItem v-for="singleItem in items" :key="singleItem.id" :text="singleItem.text" :id="singleItem.id" :status="singleItem.status" v-on:delete-todoitem="deleteItem" />
         </ul>
     </div>
 </template>
@@ -12,7 +12,13 @@ import TodoItem from "@/components/TodoItem"
 export default {
     name: "TodoList",
     props: ["items"],
-    components: { TodoItem }
+    components: { TodoItem },
+    methods: {
+       deleteItem(todoId){
+           let indexOfItemToDelete = this.items.findIndex(item => item.id === todoId)
+           this.items.splice(indexOfItemToDelete, 1)
+       }
+    },
 }
 </script>
 

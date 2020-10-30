@@ -20,7 +20,7 @@ export default {
     },
     methods: {
         addNewItem(){
-            const newItem = { id: this.nextTodoId, text: this.newTodoItem }
+            const newItem = { id: this.nextTodoId, text: this.newTodoItem, status: "todo" }
             this.list.push(newItem)
             this.nextTodoId  ++
             this.newTodoItem = ''
